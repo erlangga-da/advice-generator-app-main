@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap');
+
+:root {
+    --background: #202632;
+    --card-bg: #313A49;
+    --h1-color: #CFE3EA;
+    --main-color: #53FFAB;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-card {
+    position: relative;
+    margin: 64px auto;
+    background-color: var(--card-bg);
+    width: 540px;
+    min-height: fit-content;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    box-shadow: 0px 4px 26px 16px rgba(0, 0, 0, 0.05);
+}
+.container-card .content {
+    position: relative;
+    margin: 64px auto;
+}
+.container-card h1{
+    color: var(--h1-color);
+    font-size: 28px;
+    font-family: manrope;
+    font-weight: 800;
+    max-width: 450px;
+    margin: 32px auto;
+}
+.container-card label{
+    color: var(--main-color);
+    font-size: 13px;
+    letter-spacing: 0.32em;
+    font-family: manrope;
+    font-weight: 700;
+    max-width: 450px;
+    margin: auto;
+}
+.container-card button {
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 64px;
+    height: 64px;
+    background-color: #53FFAB;
+    border: none;
+    border-radius: 50%;
+}
+.container-card button img{
+    margin: auto;
+}
+
+/* mobile */
+@media screen and (max-width: 580px) {
+    .container-card {
+        width: 100%;
+        margin: 64px 16px;
+        min-height: fit-content;
+    }
+    .container-card .content {
+        position: relative;
+        margin: 40px 24px;
+        width: 100%;
+    }
+    .container-card .content img {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .container-card h1{
+        font-size: 24px;
+        max-width: 100%;
+    }
+}
