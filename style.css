@@ -7,7 +7,7 @@
     --main-color: #53FFAB;
 }
 
-body {
+body,main {
     margin: 0;
     padding: 0;
     background-color: var(--background);
@@ -15,7 +15,6 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-
 .container-card {
     position: relative;
     margin: 64px auto;

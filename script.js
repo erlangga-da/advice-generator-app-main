@@ -9,7 +9,6 @@ async function getRand(url) {
         let arrData = await JSON.parse(textData);
         id.innerHTML = "ADVICE #" + arrData.slip.id;
         advice.innerHTML = arrData.slip.advice;
-        return console.log(arrData.slip);
     } catch (error) {
         return console.log(error);
     }

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="erlangga darmawan" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
@@ -11,15 +13,16 @@
 
 </head>
 <body onload="getRand(`https://api.adviceslip.com/advice`)">
-
-  <div class="container-card">
-    <div class="content">
-      <label for="h1" id="label"></label>
-      <h1 name="h1"><q id="advice"></q></h1>
-      <img src="images/pattern-divider-desktop.svg" alt="">
+  <main>
+    <div class="container-card">
+      <div class="content">
+        <label id="label"></label>
+        <h1><q id="advice"></q></h1>
+        <img src="images/pattern-divider-desktop.svg" alt="">
+      </div>
+      <button type="button" onclick="getRand(`https://api.adviceslip.com/advice`)"><img src="images/icon-dice.svg" alt="dice-icon"></button>
     </div>
-    <button type="button" onclick="getRand(`https://api.adviceslip.com/advice`)"><img src="images/icon-dice.svg" alt="dice-icon"></button>
-  </div>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
